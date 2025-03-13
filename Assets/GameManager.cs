@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TODO: completely disable player movement and only use this for animations. We keep this
+        // for debug purposes, so I can fix the animation.
         // NOTE: While the player is jumping, we suppress all other inputs.
         if (isPlayerMoving)
         {
@@ -75,7 +77,7 @@ public class GameManager : MonoBehaviour
         // Ensure final positions are exact.
         rect.anchoredPosition = target;
 
-        yield return new WaitForSeconds(2 * stepDuration);
+        // yield return new WaitForSeconds(2 * stepDuration);
         isPlayerMoving = false;
     }
 }
