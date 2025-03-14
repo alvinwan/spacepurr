@@ -1,13 +1,21 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class ScreenController : MonoBehaviour
 {
+    // game objects
     public GameObject ScreenOff;
-
+    public GameObject ScreenOn;
     public SwitchController Switch;
 
+    // internal state
     private IEnumerator Coroutine;
+    private bool isOn = false;
+
+    // listener
+    public event Action<bool> OnScreenToggled;
     
     private IEnumerator FlashPowerOffScreen()
     {
@@ -20,12 +28,32 @@ public class ScreenController : MonoBehaviour
         }
     }
 
+    public bool GetIsOn()
+    {
+        return isOn;
+    }
+
+    public void TurnOff()
+    {
+        isOn = false;
+        ScreenOn.SetActive(false);
+        Debug.Log("Screen off");
+        OnScreenToggled?.Invoke(false);
+    }
+
+    public void TurnOn()
+    {
+        isOn = true;
+        ScreenOn.SetActive(true);
+        Debug.Log("Turning screen on");
+        OnScreenToggled?.Invoke(true);
+    }
+
     public void OnPowerButtonClick()
     {
         if (Switch.GetIsOn())
         {
-            // TODO: implement
-            Debug.Log("Screen ready to show data");;
+            TurnOn();
         }
         else
         {
@@ -34,8 +62,19 @@ public class ScreenController : MonoBehaviour
             StartCoroutine(Coroutine);
         }
     }
+
+    public void OnSwitchToggled(bool isSwitchOn)
+    {
+        if (!isSwitchOn)
+        {
+            TurnOff();
+        }
+    }
+
     public void Start()
     {
         ScreenOff.SetActive(false);
+        ScreenOn.SetActive(false);
+        Switch.OnSwitchToggled += OnSwitchToggled;
     }
 }
