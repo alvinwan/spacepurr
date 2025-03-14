@@ -10,6 +10,11 @@ public class SwitchController : MonoBehaviour, IPointerClickHandler
 
     private Vector3 StartPosition;
 
+    public bool GetIsOn()
+    {
+        return isOn;
+    }
+
     public void TurnOn()
     {
         isOn = true;
