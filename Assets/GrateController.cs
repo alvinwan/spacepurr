@@ -10,6 +10,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
     public GameObject GrateCoverDiscard;
     public GameObject Pawprints;
     public TankController Tank;
+    public LevelController Level;
 
     // internal state
     private bool isCovered = true;
@@ -35,5 +36,12 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
         GrateCoverDiscard.SetActive(true);
         Pawprints.SetActive(true);
         OnGrateToggled?.Invoke(isCovered);
+        StartCoroutine(ToBeContinued());
+    }
+
+    public IEnumerator ToBeContinued()
+    {
+        yield return new WaitForSeconds(3f);
+        Level.OnLevelEnd();
     }
 }
