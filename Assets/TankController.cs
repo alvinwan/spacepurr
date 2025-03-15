@@ -13,6 +13,7 @@ public class TankController : MonoBehaviour, IPointerDownHandler
     public GameObject TankCover;
     public GrateController Grate;
     public LockController Locks;
+    public AudioSource ThunkSound;
 
     // internal state
     private bool isEmptied = false;
@@ -34,6 +35,7 @@ public class TankController : MonoBehaviour, IPointerDownHandler
         {
             return;
         }
+        ThunkSound.Play();
         TankCover.SetActive(false);
         TankCap.gameObject.SetActive(false);
     }
