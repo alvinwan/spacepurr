@@ -7,6 +7,7 @@ public class SwitchController : MonoBehaviour, IPointerClickHandler
 {
     // Game objects
     public RectTransform SwitchRect;
+    public AudioSource SwitchSound;
 
     // Internal state
     private bool isOn = false;
@@ -26,6 +27,7 @@ public class SwitchController : MonoBehaviour, IPointerClickHandler
         Debug.Log("Switch is on");
         SwitchRect.anchoredPosition = StartPosition + Vector3.up * 5;
         OnSwitchToggled?.Invoke(isOn);
+        SwitchSound.Play();
     }
 
     public void TurnOff()
@@ -34,6 +36,7 @@ public class SwitchController : MonoBehaviour, IPointerClickHandler
         Debug.Log("Switch is off");
         SwitchRect.anchoredPosition = StartPosition;
         OnSwitchToggled?.Invoke(isOn);
+        SwitchSound.Play();
     }
 
     public void OnPointerClick(PointerEventData eventData)

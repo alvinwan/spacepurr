@@ -58,7 +58,8 @@ public class PumpController : MonoBehaviour
 
     public IEnumerator FlashPumpLights()
     {
-        for (int i = 0; i < 3; i++)
+        int missing = (IsPump1On() ? 0 : 1) + (IsPump2On() ? 0 : 1) + (IsPump3On() ? 0 : 1);
+        for (int i = 0; i < missing; i++)
         {
             PumpLight1.gameObject.SetActive(true);
             PumpLight2.gameObject.SetActive(true);

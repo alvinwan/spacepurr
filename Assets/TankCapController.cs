@@ -9,6 +9,8 @@ public class TankCapController : MonoBehaviour, IPointerDownHandler, IPointerEnt
     public GameObject TankCap;
     public GameObject TankCapHighlighted;
     public GameObject TankCapPressed;
+    public AudioSource CapOpenSound;
+    public AudioSource CapCloseSound;
 
     // internal state
     private bool isPressed = false;
@@ -31,9 +33,13 @@ public class TankCapController : MonoBehaviour, IPointerDownHandler, IPointerEnt
 
     public void Press()
     {
-        isPressed = true;
-        SetState(2);
-        OnTankCapToggled?.Invoke(isPressed);
+        if (!isPressed)
+        {
+            isPressed = true;
+            SetState(2);
+            CapOpenSound.Play();
+            OnTankCapToggled?.Invoke(isPressed);
+        }
 
         if (Coroutine != null)
         {
@@ -47,6 +53,7 @@ public class TankCapController : MonoBehaviour, IPointerDownHandler, IPointerEnt
     {
         isPressed = false;
         SetState(0);
+        CapCloseSound.Play();
         OnTankCapToggled?.Invoke(isPressed);
     }
 
