@@ -10,7 +10,7 @@ public class PumpController : MonoBehaviour
     public GameObject PumpLight3;
     public SwitchController Switch;
     public ScreenController Screen;
-    public TankController Tank;
+    public TankCapController TankCap;
 
     // internal state
     private IEnumerator Coroutine;
@@ -30,7 +30,7 @@ public class PumpController : MonoBehaviour
 
     public bool IsPump3On()
     {
-        return Tank.GetIsPressed();
+        return TankCap.GetIsPressed();
     }
 
     public void LoadReadyState(bool _ = false)
@@ -78,6 +78,6 @@ public class PumpController : MonoBehaviour
         LoadReadyState();
         Switch.OnSwitchToggled += LoadReadyState;
         Screen.OnScreenToggled += LoadReadyState;
-        Tank.OnTankCapToggled += LoadReadyState;
+        TankCap.OnTankCapToggled += LoadReadyState;
     }
 }
