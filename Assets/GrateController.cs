@@ -14,6 +14,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
 
     // internal state
     private bool isCovered = true;
+    private AudioSource SuccessSound;
 
     // listeners
     public event Action<bool> OnGrateToggled;
@@ -23,6 +24,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
         GrateCover.SetActive(true);
         GrateCoverDiscard.SetActive(false);
         Pawprints.SetActive(false);
+        SuccessSound = GetComponent<AudioSource>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -36,6 +38,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
         GrateCoverDiscard.SetActive(true);
         Pawprints.SetActive(true);
         OnGrateToggled?.Invoke(isCovered);
+        SuccessSound.Play();
         StartCoroutine(ToBeContinued());
     }
 
