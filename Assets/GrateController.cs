@@ -7,6 +7,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
 {
     // game objects
     public GameObject GrateCover;
+    public GameObject GrateCoverDiscard;
     public TankController Tank;
 
     // internal state
@@ -23,6 +24,7 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
         }
         isCovered = false;
         GrateCover.SetActive(false);
+        GrateCoverDiscard.SetActive(true);
         OnGrateToggled?.Invoke(isCovered);
     }
 }
