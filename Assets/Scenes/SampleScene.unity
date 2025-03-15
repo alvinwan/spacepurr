@@ -3850,6 +3850,7 @@ MonoBehaviour:
   Switch: {fileID: 886245636}
   Screen: {fileID: 631666629}
   TankCap: {fileID: 1128291971}
+  FailSound: {fileID: 1088706979}
 --- !u!1 &1736826464
 GameObject:
   m_ObjectHideFlags: 0

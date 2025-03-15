@@ -11,6 +11,7 @@ public class PumpController : MonoBehaviour
     public SwitchController Switch;
     public ScreenController Screen;
     public TankCapController TankCap;
+    public AudioSource FailSound;
 
     // internal state
     private IEnumerator Coroutine;
@@ -62,6 +63,7 @@ public class PumpController : MonoBehaviour
             PumpLight1.gameObject.SetActive(true);
             PumpLight2.gameObject.SetActive(true);
             PumpLight3.gameObject.SetActive(true);
+            FailSound.Play();
             yield return new WaitForSeconds(0.5f);
             if (!IsPump1On()) PumpLight1.gameObject.SetActive(false);
             if (!IsPump2On()) PumpLight2.gameObject.SetActive(false);
