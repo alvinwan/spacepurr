@@ -2690,6 +2690,7 @@ MonoBehaviour:
   Pump: {fileID: 1720217252}
   Cat: {fileID: 949498365}
   TankCap: {fileID: 1128291971}
+  TankCover: {fileID: 1837909255}
 --- !u!1 &1973986459
 GameObject:
   m_ObjectHideFlags: 0
