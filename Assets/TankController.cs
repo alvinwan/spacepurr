@@ -11,23 +11,40 @@ public class TankController : MonoBehaviour, IPointerDownHandler
     public CatController Cat;
     public TankCapController TankCap;
     public GameObject TankCover;
+    public GrateController Grate;
+    public LockController Locks;
 
     // internal state
     private bool isEmptied = false;
 
+    public bool GetIsEmptied()
+    {
+        return isEmptied;
+    }
+
     void Start()
     {
         Pump.OnPumpReady += OnPumpReady;
+        Grate.OnGrateToggled += OnGrateToggled;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (!isEmptied)
+        if (!isEmptied || Locks.GetIsLocked())
         {
             return;
         }
         TankCover.SetActive(false);
         TankCap.gameObject.SetActive(false);
+    }
+
+    public void OnGrateToggled(bool isCovered)
+    {
+        if (isCovered)
+        {
+            return;
+        }
+        Cat.gameObject.SetActive(false);
     }
 
     public void OnPumpReady(bool _)

@@ -7,6 +7,11 @@ public class LockController : MonoBehaviour
     public GameObject LockOff;
     public SwitchController Switch;
 
+    public bool GetIsLocked()
+    {
+        return Switch.GetIsOn();
+    }
+
     public void SetState(bool isLocked)
     {
         LockOn.SetActive(isLocked);
