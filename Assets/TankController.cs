@@ -14,6 +14,9 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     private bool isPressed = false;
     private IEnumerator Coroutine;
 
+    // listeners
+    public event Action<bool> OnTankCapToggled;
+
     void Start()
     {
         SetState(0);
@@ -30,12 +33,19 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     {
         isPressed = true;
         SetState(2);
+        OnTankCapToggled?.Invoke(isPressed);
     }
 
     public void Release()
     {
         isPressed = false;
         SetState(0);
+        OnTankCapToggled?.Invoke(isPressed);
+    }
+
+    public bool GetIsPressed()
+    {
+        return isPressed;
     }
 
     IEnumerator ReleaseAfterDelay(float delay)

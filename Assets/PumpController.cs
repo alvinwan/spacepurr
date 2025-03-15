@@ -10,22 +10,36 @@ public class PumpController : MonoBehaviour
     public GameObject PumpLight3;
     public SwitchController Switch;
     public ScreenController Screen;
+    public TankController Tank;
 
     // internal state
-    private int readyLevel = 0;
     private IEnumerator Coroutine;
 
-    public void SetReadyState(int level)
+    public bool IsPump1On()
     {
-        readyLevel = level;
-        PumpLight1.gameObject.SetActive(level >= 1);
-        PumpLight2.gameObject.SetActive(level >= 2);
-        PumpLight3.gameObject.SetActive(level >= 3);
+        return Switch.GetIsOn();
+    }
+
+    public bool IsPump2On()
+    {
+        return Screen.GetIsOn();
+    }
+
+    public bool IsPump3On()
+    {
+        return Tank.GetIsPressed();
+    }
+
+    public void LoadReadyState(bool _ = false)
+    {
+        PumpLight1.gameObject.SetActive(IsPump1On());
+        PumpLight2.gameObject.SetActive(IsPump2On());
+        PumpLight3.gameObject.SetActive(IsPump3On());
     }
 
     public void OnPowerButtonClick()
     {
-        if (readyLevel == 3)
+        if (IsPump1On() && IsPump2On() && IsPump3On())
         {
             Debug.Log("Pump is on");
             // TODO: add water pumping here
@@ -46,44 +60,21 @@ public class PumpController : MonoBehaviour
             PumpLight2.gameObject.SetActive(true);
             PumpLight3.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.5f);
-            if (readyLevel < 1) PumpLight1.gameObject.SetActive(false);
-            if (readyLevel < 2) PumpLight2.gameObject.SetActive(false);
-            if (readyLevel < 3) PumpLight3.gameObject.SetActive(false);
+            if (!IsPump1On()) PumpLight1.gameObject.SetActive(false);
+            if (!IsPump2On()) PumpLight2.gameObject.SetActive(false);
+            if (!IsPump3On()) PumpLight3.gameObject.SetActive(false);
             yield return new WaitForSeconds(0.5f);
         }
 
         // Just to make doubly sure that the state is restored
-        SetReadyState(readyLevel);
-    }
-
-    public void OnSwitchToggled(bool isSwitchOn)
-    {
-        if (isSwitchOn)
-        {
-            SetReadyState(1);
-        }
-        else
-        {
-            SetReadyState(0);
-        }
-    }
-
-    public void OnScreenToggled(bool isScreenOn)
-    {
-        if (isScreenOn)
-        {
-            SetReadyState(2);
-        }
-        else
-        {
-            OnSwitchToggled(Switch.GetIsOn());
-        }
+        LoadReadyState();
     }
 
     public void Start()
     {
-        SetReadyState(0);
-        Switch.OnSwitchToggled += OnSwitchToggled;
-        Screen.OnScreenToggled += OnScreenToggled;
+        LoadReadyState();
+        Switch.OnSwitchToggled += LoadReadyState;
+        Screen.OnScreenToggled += LoadReadyState;
+        Tank.OnTankCapToggled += LoadReadyState;
     }
 }
