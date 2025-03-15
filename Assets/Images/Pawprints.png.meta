@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: ae511e09ec1b14ffa86046dd3bfdb98e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -805241223930626772
+    second: Pawprints_0
+  - first:
+      213: -7661743600640709498
+    second: Pawprints_1
+  - first:
+      213: 1811913055068696160
+    second: Pawprints_2
+  - first:
+      213: -2897537812170033075
+    second: Pawprints_3
+  - first:
+      213: -8812992618100537211
+    second: Pawprints_4
+  - first:
+      213: -6984707517591094481
+    second: Pawprints_5
+  - first:
+      213: -4621028935895515687
+    second: Pawprints_6
+  - first:
+      213: 5954983725727343502
+    second: Pawprints_7
+  - first:
+      213: 4232797505707384415
+    second: Pawprints_8
+  - first:
+      213: -8909363321747592855
+    second: Pawprints_9
+  - first:
+      213: -7867913759715200007
+    second: Pawprints_10
+  - first:
+      213: -30692097854154133
+    second: Pawprints_11
+  - first:
+      213: 6156849230036938699
+    second: Pawprints_12
+  - first:
+      213: -7659380140956193928
+    second: Pawprints_13
+  - first:
+      213: -8182866316245442617
+    second: Pawprints_14
+  - first:
+      213: -7412186889410105274
+    second: Pawprints_15
+  - first:
+      213: -91199799578439332
+    second: Pawprints_16
+  - first:
+      213: -533766238179583799
+    second: Pawprints_17
+  - first:
+      213: -5868009503229529723
+    second: Pawprints_18
+  - first:
+      213: -1679763520973094753
+    second: Pawprints_19
+  - first:
+      213: 701294967369854987
+    second: Pawprints_20
+  - first:
+      213: -7100802337050206356
+    second: Pawprints_21
+  - first:
+      213: 539568074374342539
+    second: Pawprints_22
+  - first:
+      213: 2811956043219840287
+    second: Pawprints_23
+  - first:
+      213: -3808919258324322416
+    second: Pawprints_24
+  - first:
+      213: -12905624530040612
+    second: Pawprints_25
+  - first:
+      213: 3008569578136358615
+    second: Pawprints_26
+  - first:
+      213: -7379860959286867836
+    second: Pawprints_27
+  - first:
+      213: 8149632544593038463
+    second: Pawprints_28
+  - first:
+      213: -3516005855884695142
+    second: Pawprints_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pawprints_0
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 179
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d3d198f5533d4f0800000000000000
+      internalID: -805241223930626772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 191
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c20b3f9c40ca590800000000000000
+      internalID: -7661743600640709498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 187
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e234bd255352910800000000000000
+      internalID: 1811913055068696160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_3
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 178
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48b75e26b0e9c7d0800000000000000
+      internalID: -2897537812170033075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 183
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5884af538e5f1b580800000000000000
+      internalID: -8812992618100537211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_5
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 175
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b7bf1f485511f90800000000000000
+      internalID: -6984707517591094481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_6
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 143
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd75238aaecedfb0800000000000000
+      internalID: -4621028935895515687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_7
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 155
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83e53fc52a54a250800000000000000
+      internalID: 5954983725727343502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 146
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e19d5b7eaedba30800000000000000
+      internalID: 4232797505707384415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 149
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969275043459b5480800000000000000
+      internalID: -8909363321747592855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_10
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 137
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f374cc1f1e8fc290800000000000000
+      internalID: -7867913759715200007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_11
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 147
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6addf913b5f29ff0800000000000000
+      internalID: -30692097854154133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 140
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf2dfb11c5817550800000000000000
+      internalID: 6156849230036938699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 106
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bef9ac75a64b590800000000000000
+      internalID: -7659380140956193928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 111
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf5ea7a07e907e80800000000000000
+      internalID: -8182866316245442617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_15
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 99
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64037e7ab4f922990800000000000000
+      internalID: -7412186889410105274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_16
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c515a86f34efbbef0800000000000000
+      internalID: -91199799578439332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_17
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c895343f6ea798f0800000000000000
+      internalID: -533766238179583799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_18
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 102
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58133656274a09ea0800000000000000
+      internalID: -5868009503229529723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 82
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f904db93af740b8e0800000000000000
+      internalID: -1679763520973094753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_20
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 87
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0079d4ae008bb900800000000000000
+      internalID: 701294967369854987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_21
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 69
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fdbd765e1e47d90800000000000000
+      internalID: -7100802337050206356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_22
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 75
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87693d0e4eec7700800000000000000
+      internalID: 539568074374342539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_23
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 70
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1da1287f13160720800000000000000
+      internalID: 2811956043219840287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_24
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0973f657d10042bc0800000000000000
+      internalID: -3808919258324322416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_25
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 54
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd84842276622dff0800000000000000
+      internalID: -12905624530040612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_26
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 42
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de4dda571690c920800000000000000
+      internalID: 3008569578136358615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488cee5ce87759990800000000000000
+      internalID: -7379860959286867836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c4e66ee9f491170800000000000000
+      internalID: 8149632544593038463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pawprints_29
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99accb7d43a43fc0800000000000000
+      internalID: -3516005855884695142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pawprints_0: -805241223930626772
+      Pawprints_1: -7661743600640709498
+      Pawprints_10: -7867913759715200007
+      Pawprints_11: -30692097854154133
+      Pawprints_12: 6156849230036938699
+      Pawprints_13: -7659380140956193928
+      Pawprints_14: -8182866316245442617
+      Pawprints_15: -7412186889410105274
+      Pawprints_16: -91199799578439332
+      Pawprints_17: -533766238179583799
+      Pawprints_18: -5868009503229529723
+      Pawprints_19: -1679763520973094753
+      Pawprints_2: 1811913055068696160
+      Pawprints_20: 701294967369854987
+      Pawprints_21: -7100802337050206356
+      Pawprints_22: 539568074374342539
+      Pawprints_23: 2811956043219840287
+      Pawprints_24: -3808919258324322416
+      Pawprints_25: -12905624530040612
+      Pawprints_26: 3008569578136358615
+      Pawprints_27: -7379860959286867836
+      Pawprints_28: 8149632544593038463
+      Pawprints_29: -3516005855884695142
+      Pawprints_3: -2897537812170033075
+      Pawprints_4: -8812992618100537211
+      Pawprints_5: -6984707517591094481
+      Pawprints_6: -4621028935895515687
+      Pawprints_7: 5954983725727343502
+      Pawprints_8: 4232797505707384415
+      Pawprints_9: -8909363321747592855
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
