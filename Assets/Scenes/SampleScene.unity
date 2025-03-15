@@ -1207,6 +1207,7 @@ GameObject:
   - component: {fileID: 949498364}
   - component: {fileID: 949498363}
   - component: {fileID: 949498362}
+  - component: {fileID: 949498365}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -1293,6 +1294,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949498360}
   m_CullTransparentMesh: 1
+--- !u!114 &949498365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949498360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8558eeadcde43fc973c1b2f3e2aaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147856260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2039,7 @@ GameObject:
   - component: {fileID: 1872285873}
   - component: {fileID: 1872285874}
   m_Layer: 0
-  m_Name: TankCap
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2074,6 +2087,7 @@ MonoBehaviour:
   TankCapPressed: {fileID: 140220077}
   Water: {fileID: 147426034}
   Pump: {fileID: 1720217252}
+  Cat: {fileID: 949498365}
 --- !u!1 &1973986459
 GameObject:
   m_ObjectHideFlags: 0

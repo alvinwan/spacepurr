@@ -11,6 +11,7 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     public GameObject TankCapPressed;
     public GameObject Water;
     public PumpController Pump;
+    public CatController Cat;
 
     // internal state
     private bool isPressed = false;
@@ -99,5 +100,6 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
         StopCoroutine(Coroutine);
         SetState(2);
         Water.SetActive(false);
+        Cat.Awaken();
     }
 }
