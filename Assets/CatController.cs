@@ -21,6 +21,7 @@ public class CatController : MonoBehaviour
 
     IEnumerator Meow()
     {
+        yield return new WaitForSeconds(1f);
         MeowSound.Play();
         yield return new WaitForSeconds(5f);
         MeowSound.Play();

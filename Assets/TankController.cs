@@ -14,6 +14,7 @@ public class TankController : MonoBehaviour, IPointerDownHandler
     public GrateController Grate;
     public LockController Locks;
     public AudioSource ThunkSound;
+    public AudioSource DrainWaterSound;
 
     // internal state
     private bool isEmptied = false;
@@ -59,5 +60,6 @@ public class TankController : MonoBehaviour, IPointerDownHandler
         TankCap.Press();
         Water.SetActive(false);
         Cat.Awaken();
+        DrainWaterSound.Play();
     }
 }
