@@ -9,6 +9,8 @@ public class ScreenController : MonoBehaviour
     public GameObject ScreenOff;
     public GameObject ScreenOn;
     public SwitchController Switch;
+    public AudioSource FailSound;
+    public AudioSource PowerOnSound;
 
     // internal state
     private IEnumerator Coroutine;
@@ -22,6 +24,7 @@ public class ScreenController : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             ScreenOff.SetActive(true);
+            FailSound.Play();
             yield return new WaitForSeconds(0.5f);
             ScreenOff.SetActive(false);
             yield return new WaitForSeconds(0.5f);
@@ -47,6 +50,7 @@ public class ScreenController : MonoBehaviour
         ScreenOn.SetActive(true);
         Debug.Log("Turning screen on");
         OnScreenToggled?.Invoke(true);
+        PowerOnSound.Play();
     }
 
     public void OnPowerButtonClick()
