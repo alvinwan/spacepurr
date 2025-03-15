@@ -9,6 +9,8 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     public GameObject TankCap;
     public GameObject TankCapHighlighted;
     public GameObject TankCapPressed;
+    public GameObject Water;
+    public PumpController Pump;
 
     // internal state
     private bool isPressed = false;
@@ -20,6 +22,7 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     void Start()
     {
         SetState(0);
+        Pump.OnPumpReady += OnPumpReady;
     }
 
     void SetState(int state)
@@ -89,5 +92,12 @@ public class TankController : MonoBehaviour, IPointerDownHandler, IPointerEnterH
             Coroutine = ReleaseAfterDelay(3f);
             StartCoroutine(Coroutine);
         }
+    }
+
+    public void OnPumpReady(bool _)
+    {
+        StopCoroutine(Coroutine);
+        SetState(2);
+        Water.SetActive(false);
     }
 }

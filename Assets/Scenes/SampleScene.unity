@@ -245,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1208,12 +1208,12 @@ GameObject:
   - component: {fileID: 949498363}
   - component: {fileID: 949498362}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &949498361
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1230,7 +1230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -140.7, y: -46}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &949498362
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb040894c80e64a0ba9347e0dba64c6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c5a5cfbd562143d88e4f310772c590d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2003,11 +2003,11 @@ RectTransform:
   m_Children:
   - {fileID: 1667537092}
   - {fileID: 514006443}
-  - {fileID: 949498361}
   - {fileID: 886245635}
   - {fileID: 631666628}
   - {fileID: 1720217251}
   - {fileID: 1872285873}
+  - {fileID: 949498361}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2026,7 +2026,7 @@ GameObject:
   - component: {fileID: 1872285873}
   - component: {fileID: 1872285874}
   m_Layer: 0
-  m_Name: Tank
+  m_Name: TankCap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2072,6 +2072,8 @@ MonoBehaviour:
   TankCap: {fileID: 435237339}
   TankCapHighlighted: {fileID: 1567720630}
   TankCapPressed: {fileID: 140220077}
+  Water: {fileID: 147426034}
+  Pump: {fileID: 1720217252}
 --- !u!1 &1973986459
 GameObject:
   m_ObjectHideFlags: 0

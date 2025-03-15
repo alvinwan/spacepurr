@@ -15,6 +15,9 @@ public class PumpController : MonoBehaviour
     // internal state
     private IEnumerator Coroutine;
 
+    // listeners
+    public event Action<bool> OnPumpReady;
+
     public bool IsPump1On()
     {
         return Switch.GetIsOn();
@@ -42,7 +45,7 @@ public class PumpController : MonoBehaviour
         if (IsPump1On() && IsPump2On() && IsPump3On())
         {
             Debug.Log("Pump is on");
-            // TODO: add water pumping here
+            OnPumpReady?.Invoke(true);
         }
         else
         {
