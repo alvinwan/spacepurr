@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ToBeContinuedController : MonoBehaviour, IPointerDownHandler
+public class ToBeContinuedController : MonoBehaviour
 {
     public GameObject Level;
     public GameObject Menu;
@@ -11,7 +11,7 @@ public class ToBeContinuedController : MonoBehaviour, IPointerDownHandler
     {
         gameObject.SetActive(false);
     }
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnButtonClick()
     {
         Menu.SetActive(true);
         gameObject.SetActive(false);
