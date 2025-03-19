@@ -47,4 +47,9 @@ public class GrateController : MonoBehaviour, IPointerDownHandler
         yield return new WaitForSeconds(3f);
         Level.OnLevelEnd();
     }
+
+    public bool GetIsCovered()
+    {
+        return isCovered;
+    }
 }

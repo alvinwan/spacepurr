@@ -24,6 +24,11 @@ public class TankController : MonoBehaviour, IPointerDownHandler
         return isEmptied;
     }
 
+    public bool GetIsCovered()
+    {
+        return TankCover.activeSelf;
+    }
+
     void Start()
     {
         Pump.OnPumpReady += OnPumpReady;

@@ -2395,6 +2395,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HelpMenu: {fileID: 1434037750}
+  HintText: {fileID: 1738809950}
+  Switch: {fileID: 886245636}
+  Screen: {fileID: 631666629}
+  Pump: {fileID: 1720217252}
+  TankCap: {fileID: 1128291971}
+  Tank: {fileID: 1872285874}
+  Grate: {fileID: 1019901052}
 --- !u!1 &857888534
 GameObject:
   m_ObjectHideFlags: 0

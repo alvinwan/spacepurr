@@ -34,6 +34,11 @@ public class PumpController : MonoBehaviour
         return TankCap.GetIsPressed();
     }
 
+    public bool GetIsReady()
+    {
+        return IsPump1On() && IsPump2On() && IsPump3On();
+    }
+
     public void LoadReadyState(bool _ = false)
     {
         PumpLight1.gameObject.SetActive(IsPump1On());
